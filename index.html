@@ -8,9 +8,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -22,8 +25,10 @@
       <nav class="navbar">
         <a href="#home" class="active" title="home">Home</a>
         <a href="#about" title="about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a href="#services" title="services">Services</a>
-        <a href="#project" title="projectt">Projects</a>
+        <a href="#project" title="project">Projects</a>
         <a href="#contact" title="cpntact">Contact</a>
       </nav>
     </header>
@@ -34,13 +39,12 @@
         <h1>Uday Pratap</h1>
         <h3>And I'm a <span class="multiple-text"></span></h3>
         <p>
-          Hi, I'm Uday Pratap — a B.Tech CSE student and Full Stack
-          Developer. I build responsive web applications using Java, JavaScript,
-          React.js, Node.js and SQL. I'm passionate about problem-solving,
-          learning new technologies and creating projects that solve real-world
-          problems.
+          Hi, I'm Uday Pratap — a B.Tech CSE student and Full Stack Developer. I
+          build responsive web applications using Java, JavaScript, React.js,
+          Node.js and SQL. I'm passionate about problem-solving, learning new
+          technologies and creating projects that solve real-world problems.
         </p>
-        <div class="social-media">
+        <div class="social-media home-buttons">
           <a href="https://www.facebook.com/udaypratap08/" target="_blank"
             ><i class="fa-brands fa-facebook icons-class"></i
           ></a>
@@ -54,7 +58,10 @@
             ><i class="fa-brands fa-linkedin icons-class"></i
           ></a>
         </div>
-        <a href="resume.pdf.pdf" download class="btn">Download CV</a>
+
+        <a href="resume.pdf" download class="btn">
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
       </div>
       <!--home-img-->
       <div class="home-img">
@@ -66,7 +73,7 @@
     <section class="about" id="about">
       <div class="about-img">
         <!--about section img-->
-        <img src="image/about-img-uday.jpg" alt="uday image" />
+        <img src="image/about-uday img.jpg" alt="uday image" />
       </div>
       <div class="about-content">
         <!--about section content-->
@@ -80,7 +87,270 @@
           working on real-world projects. Currently, I'm looking for
           opportunities to grow and contribute as a developer. 🚀
         </p>
-        <a href="#" class="btn">Read more</a>
+        <!-- <a href="#projects" class="btn">Read more</a> -->
+        <a href="resume.pdf" download class="btn">
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+      </div>
+    </section>
+
+    <!-- Skills Section design  -->
+    <section class="skills" id="skills">
+      <div class="skills-inner">
+        <h2 class="heading">What I <span>work with</span></h2>
+        <p class="skills-subtitle">
+          My technical toolkit across programming, frontend, backend, databases
+          and tools.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="skills-filters" role="group" aria-label="Filter skills">
+          <button
+            class="skill-filter active"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All
+          </button>
+          <button
+            class="skill-filter"
+            data-filter="languages"
+            aria-pressed="false"
+          >
+            Languages
+          </button>
+          <button
+            class="skill-filter"
+            data-filter="frontend"
+            aria-pressed="false"
+          >
+            Frontend
+          </button>
+          <button
+            class="skill-filter"
+            data-filter="backend"
+            aria-pressed="false"
+          >
+            Backend
+          </button>
+          <button
+            class="skill-filter"
+            data-filter="database"
+            aria-pressed="false"
+          >
+            Database
+          </button>
+          <button class="skill-filter" data-filter="tools" aria-pressed="false">
+            Tools
+          </button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          <article class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <h3>Java</h3>
+              <span>LANGUAGES</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" style="--skill-level: 50%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <h3>Python (Basic)</h3>
+              <span>LANGUAGES</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" style="--skill-level: 30%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <h3>JavaScript</h3>
+              <span>FRONTEND</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" style="--skill-level: 60%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <h3>React.js</h3>
+              <span>FRONTEND</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" style="--skill-level: 55%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <h3>HTML</h3>
+              <span>FRONTEND</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" style="--skill-level: 70%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <h3>CSS</h3>
+              <span>FRONTEND</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" style="--skill-level: 65%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <h3>Node.js</h3>
+              <span>BACKEND</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" style="--skill-level: 50%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <h3>Express.js</h3>
+              <span>BACKEND</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" style="--skill-level: 50%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="database">
+            <div class="skill-card-top">
+              <h3>MongoDB</h3>
+              <span>DATABASE</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" style="--skill-level: 50%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="database">
+            <div class="skill-card-top">
+              <h3>MySQL</h3>
+              <span>DATABASE</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" style="--skill-level: 45%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <h3>Git & GitHub</h3>
+              <span>TOOLS</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" style="--skill-level: 50%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <h3>VS Code</h3>
+              <span>TOOLS</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" style="--skill-level: 60%"></div>
+            </div>
+          </article>
+
+          <!-- <article class="skill-card" data-category="tools">
+        <div class="skill-card-top"><h3>Axios</h3><span>TOOLS</span></div>
+        <div class="skill-progress">
+          <div class="skill-progress-fill" style="--skill-level: 45%"></div>
+        </div>
+      </article> -->
+
+          <article class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <h3>DSA & OOPs</h3>
+              <span>PROGRAMMING</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" style="--skill-level: 45%"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--Education Section Design -->
+    <section class="education" id="education">
+      <div class="education-header">
+        <h2>Academic <span>background</span></h2>
+      </div>
+
+      <div class="education-timeline">
+        <!-- B.Tech -->
+        <div class="education-item">
+          <div class="education-dot"></div>
+
+          <div class="education-details">
+            <span class="education-year">2023 – 2027</span>
+
+            <h3>B.Tech — Computer Science & Engineering</h3>
+
+            <h4>
+              Lloyd Institute of Management and Technology - Greater Noida
+            </h4>
+
+            <p>
+              <span class="education-arrow">▹</span>
+              Studying computer science, data structures and algorithms,
+              full-stack web development, and software engineering. Building
+              practical skills through projects such as Edemy LMS.
+            </p>
+          </div>
+        </div>
+
+        <!-- Class XII -->
+        <div class="education-item">
+          <div class="education-dot"></div>
+
+          <div class="education-details">
+            <span class="education-year">2021 - 2022</span>
+
+            <h3>Intermediate — Class XII</h3>
+
+            <h4>Bal Bharti Inter College - Orai (Jalaun), Uttar Pradesh</h4>
+
+            <p>
+              <span class="education-arrow">▹</span>
+              Completed Intermediate (Class XII) with 80%
+            </p>
+          </div>
+        </div>
+
+        <!-- Class X -->
+        <div class="education-item">
+          <div class="education-dot"></div>
+
+          <div class="education-details">
+            <span class="education-year">2019 - 2020</span>
+
+            <h3>High School — Class X</h3>
+
+            <h4>Bal Bharti Inter College - Orai (Jalaun), Uttar Pradesh</h4>
+
+            <p>
+              <span class="education-arrow">▹</span>
+              Completed High School (Class X) with 85%.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -99,7 +369,7 @@
             JavaScript and modern web technologies with a focus on clean design
             and performance.
           </p>
-          <a href="#" class="btn">Read More</a>
+          <a href="#project" class="btn">View Projects</a>
         </div>
 
         <div class="services-box">
@@ -111,7 +381,7 @@
             and React.js with reusable components and modern web design
             practices
           </p>
-          <a href="#" class="btn">Read More</a>
+          <a href="#projects" class="btn">View Projects</a>
         </div>
 
         <div class="services-box">
@@ -122,121 +392,492 @@
             I develop complete web applications using React.js, Node.js,
             Express.js and MongoDB, connecting frontend, backend and database.
           </p>
-          <a href="#" class="btn">Read More</a>
+          <a href="#projects" class="btn">View Projects</a>
         </div>
       </div>
     </section>
 
-    <!--Services section design-->
+    <!-- Projects Section design  -->
     <section class="project" id="project">
-      <h2 class="project-heading">Latest <span>Projects</span></h2>
-
-      <div class="project-container">
-        <div class="project-box">
-          <!--project box 1-->
-          <img src="image/project-img1.jpg" alt="" />
-          <div class="project-layer">
-            <h4>QR CODE Generator</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="project-box">
-          <!--project box 2-->
-          <img src="image/project-img10.jpg" alt="" />
-          <div class="project-layer">
-            <h4>Quiz Game</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="project-box">
-          <!--project box 3-->
-          <img src="image/project-img7.jpg" alt="" />
-          <div class="project-layer">
-            <h4>Wheather App</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
+      <div class="project-header">
+        <div>
+          <h2 class="project-heading">Featured <span>Projects</span></h2>
+          <p class="project-subtitle">
+            A selection of projects I've built while learning and developing my
+            skills.
+          </p>
         </div>
       </div>
-      <!-- project-container div end-->
+
+      <div class="project-container">
+        <!-- Project 1: Edemy LMS -->
+        <article class="project-box" data-category="fullstack">
+          <div class="project-image">
+            <img
+              src="image/Edemy Learning Platform Showcase.png"
+              alt="Edemy Learning Management System screenshot"
+              loading="lazy"
+            />
+            <span class="project-category">FULL STACK</span>
+          </div>
+
+          <div class="project-card-content">
+            <h3>Edemy — Learning Management System</h3>
+
+            <p>
+             Edemy is a full-stack Learning Management System (LMS) that allows students to explore courses, enroll, and learn online. Educators can manage courses, track enrollments, and handle payments through Stripe.
+            </p>
+
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>Clerk</span>
+              <span>Stripe</span>
+              <span>Vercel</span>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="project-external-links">
+                <!-- Replace # with your actual GitHub repository URL -->
+                <a
+                  class="project-link github-link"
+                  href="https://github.com/udaypratap08/Learing-management-system"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square external-icon"
+                  ></i>
+                </a>
+
+                <a
+                  class="project-link demo-link"
+                  href="https://learing-management-system-7j3t.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-rocket"></i>
+                  Live Demo
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square external-icon"
+                  ></i>
+                </a>
+              </div>
+
+              <button
+                class="project-details-link"
+                type="button"
+                data-project="edemy"
+              >
+                View Details <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Job Portal — Full Stack Job Search & Recruitment Platform -->
+        <article class="project-box" data-category="frontend">
+          <div class="project-image">
+            <img
+              src="image/JobPortal UI Showcase.png"
+              alt="Job Portal — Full Stack Job Search & Recruitment Platformscreenshot"
+              loading="lazy"
+            />
+            <span class="project-category">FULLSTACK</span>
+          </div>
+
+          <div class="project-card-content">
+            <h3>Job Portal — Job Search & Recruitment Platform</h3>
+
+            <p>
+              A full-stack job portal web application that connects job seekers with recruiters. Job seekers can search for job openings, apply online, and upload their resumes to their profiles.
+            </p>
+
+            <div class="project-tech">
+              <span>React</span>
+              <span>Express.js</span>
+              <span>MongoDB</span>
+              <span>Node.js</span>
+              <span>Clerk</span>
+              <span>Stripe</span>
+              <span>Vercel</span>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="project-external-links">
+                <!-- Add your actual repository and demo links -->
+                <a
+                  class="project-link github-link"
+                  href="https://github.com/udaypratap08"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square external-icon"
+                  ></i>
+                </a>
+                <a
+                  class="project-link demo-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-rocket"></i>
+                  Live Demo
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square external-icon"
+                  ></i>
+                </a>
+              </div>
+
+              <button
+                class="project-details-link"
+                type="button"
+                data-project="job_portal"
+              >
+                View Details <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3:  AI Virtual Assistant — MERN Stack -->
+        <article class="project-box" data-category="frontend">
+          <div class="project-image">
+            <img
+              src="image/AI Virtual Assistant Interface Mockup.png"
+              alt="Weather App project screenshot"
+              loading="lazy"
+            />
+            <span class="project-category">FULLSTACK</span>
+          </div>
+
+          <div class="project-card-content">
+            <h3>AI Virtual Assistant — MERN Stack</h3>
+
+            <p>
+              An AI-powered virtual assistant web application built using the MERN stack. The project focuses on creating an interactive assistant experience with a React-based frontend and a Node.js and Express backend,supported by MongoDB for data management.
+            </p>
+
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>MongoDB</span>
+              <span>Artificial Intelligence</span>
+              <span>Voice Recognition</span>
+              <span>Speech Synthesis</span>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="project-external-links">
+                <!-- Add your actual repository and demo links -->
+                <a
+                  class="project-link github-link"
+                  href="https://github.com/udaypratap08"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square external-icon"
+                  ></i>
+                </a>
+                <a
+                  class="project-link demo-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-rocket"></i>
+
+                  Live Demo
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square external-icon"
+                  ></i>
+                </a>
+              </div>
+
+              <button
+                class="project-details-link"
+                type="button"
+                data-project="ai_assistant"
+              >
+                View Details <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
     <!--Contact section design-->
-    <section id="contact" class="contact">
+
+<section id="contact" class="contact">
+
+  <div class="contact-container">
+
+    <!-- LEFT SIDE: CONTACT INFORMATION -->
+    <div class="contact-content">
+
+      <span class="contact-label">
+        <span class="contact-label-line"></span>
+        CONTACT
+      </span>
+
+      <h2 class="contact-title">
+        Let's Work <span>Together</span>
+      </h2>
+
+      <p class="contact-description">
+        I'm always excited to work on new projects and explore new
+        opportunities. Whether you have a project idea, collaboration
+        opportunity or internship opportunity, feel free to reach out.
+        Let's connect and build something amazing together!
+      </p>
+
+      <!-- Email -->
+  
+<div class="contact-info-item">
+
+    <span class="contact-info-icon">
+         <a class="contact-arrow"
+       href="https://mail.google.com/mail/?view=cm&fs=1&to=udayprataprathaur84@gmail.com"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Send email">
+       <i class="fa-solid fa-envelope"></i>
+    </a>
       
-      <div class="contact-content">
-        <!----contact text(content) -->
-        <h3>Let's Work Together</h3>
-        <p>
-          I’m always excited to work on new projects and explore new
-          opportunities. Whether you have a project idea, collaboration
-          opportunity or internship opportunity, feel free to reach out. Let’s
-          connect and build something amazing together!
-        </p>
-        <div class="contact-icon">
-          <i class="fa-solid fa-envelope"></i>
-          <p>udayprataprathaur84@gmail.com</p>
-        </div>
-        <div class="contact-icon">
-          <i class="fa-solid fa-phone"></i>
-          <p>+91 7652070608</p>
-        </div>
-        <div class="contact-icon">
-          <i class="fa-solid fa-location-dot"></i>
-          <p>
-            Dharmpura Jagir, post-pachokhara, Rampura, Jalaun, Uttar Pradesh
-          </p>
-        </div>
+    </span>
 
-        <div class="social-media">
-          <a
-            href="https://www.facebook.com/prabalpushpendra.kushwahaorai"
-            target="_blank"
-            ><i class="fa-brands fa-facebook icons-class"></i
-          ></a>
-          <a href="https://www.instagram.com/its.udaypratap/" target="_blank"
-            ><i class="fa-brands fa-instagram icons-class"></i
-          ></a>
-          <a href="https://github.com/udaypratap08" target="_blank"
-            ><i class="fa-brands fa-github"></i>
+    <span class="contact-info-text">
+        <strong>Email Me</strong>
+        <small>udayprataprathaur84@gmail.com</small>
+    </span>
+
+    <a class="contact-arrow"
+       href="https://mail.google.com/mail/?view=cm&fs=1&to=udayprataprathaur84@gmail.com"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Send email">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+
+</div>
+
+
+
+      <!-- Phone -->
+   
+<div class="contact-info-item">
+
+    <span class="contact-info-icon">
+       <a class="contact-arrow"
+       href="tel:+917652070608"
+       aria-label="Call phone number">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+        
+    </span>
+
+    <span class="contact-info-text">
+        <strong>Call Me</strong>
+        <small>+91 7652070608</small>
+    </span>
+
+    <a class="contact-arrow"
+       href="tel:+917652070608"
+       aria-label="Call phone number">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+
+</div>
+      
+<div class="contact-info-item">
+
+    <span class="contact-info-icon">
+      <a class="contact-arrow"
+       href="https://www.google.com/maps/search/?api=1&query=Dharmpura+Jagir+Rampura+Jalaun+Uttar+Pradesh"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Open location in Google Maps">
+        <i class="fa-solid fa-location-dot"></i>
+    </a>
+       
+    </span>
+
+    <span class="contact-info-text">
+        <strong>My Location</strong>
+        <small>Dharmpura Jagir,post-pachokhara, Rampura, Jalaun, Uttar Pradesh</small>
+    </span>
+
+    <a class="contact-arrow"
+       href="https://www.google.com/maps/search/?api=1&query=Dharmpura+Jagir+Rampura+Jalaun+Uttar+Pradesh"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Open location in Google Maps">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+
+</div>
+
+
+      <!-- Social Media -->
+      <div class="contact-socials">
+        <h3>Connect With Me</h3>
+        <p>Follow me on social media and explore my work.</p>
+
+        <div class="contact-social-links">
+
+          <a href="https://www.facebook.com/udaypratap08"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
           </a>
-          <a href="www.linkedin.com/in/udaypratap12" target="_blank"
-            ><i class="fa-brands fa-linkedin icons-class"></i
-          ></a>
+
+          <a href="https://www.instagram.com/its.udaypratap/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://github.com/udaypratap08"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/udaypratap12/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: CONTACT FORM -->
+    <div class="contact-form-card">
+
+      <div class="contact-form-heading">
+        <span class="contact-form-heading-icon">
+          <i class="fa-regular fa-paper-plane"></i>
+        </span>
+
+        <div>
+          <h3>Send Me a Message</h3>
+          <p>Have a question or opportunity? Let's talk.</p>
         </div>
       </div>
 
-      <div class="contact-form">
-        <h2 class="contact-heading">Contact <span>Me</span></h2>
-        <form action="#">
-          <!--contact form-->
-          <div class="input-box">
-            <!--first input box-->
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
+      <form id="contactForm">
+
+        <div class="contact-input-row">
+          <input
+  type="hidden"
+  name="access_key"
+  value="620f1170-8e4c-4b36-98c5-0ac616a38a64"
+/>
+          <div class="contact-field">
+            <label for="firstName">First Name *</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Enter first name"
+              autocomplete="given-name"
+              maxlength="80"
+              required
+            />
           </div>
 
-          <div class="input-box">
-            <!--second input box-->
-            <input type="email" placeholder="Enter Email" />
-            <input type="tel" placeholder="Mobile Number" />
+          <div class="contact-field">
+            <label for="lastName">Last Name *</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Enter last name"
+              autocomplete="family-name"
+              maxlength="80"
+              required
+            />
           </div>
+        </div>
+
+        <div class="contact-input-row">
+          <div class="contact-field">
+            <label for="contactEmail">Email Address *</label>
+            <input
+              type="email"
+              id="contactEmail"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              maxlength="254"
+              required
+            />
+          </div>
+
+          <div class="contact-field">
+            <label for="contactPhone">Mobile Number</label>
+            <input
+              type="tel"
+              id="contactPhone"
+              name="phone"
+              placeholder="Optional"
+              autocomplete="tel"
+              maxlength="11"
+            />
+          </div>
+        </div>
+
+        <div class="contact-field">
+          <label for="contactSubject">Subject</label>
+          <input
+            type="text"
+            id="contactSubject"
+            name="subject"
+            placeholder="Internship, project or collaboration"
+            maxlength="150"
+          />
+        </div>
+
+        <div class="contact-field">
+          <label for="contactMessage">Your Message *</label>
           <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
+            id="contactMessage"
+            name="message"
+            rows="5"
+            placeholder="Write your message here..."
+            maxlength="5000"
+            required
           ></textarea>
-          <input type="submit" value="Send Message" class="btn" />
-        </form>
-      </div>
-    
-    </section>
+        </div>
+
+        <button type="submit" class="contact-submit-btn" id="contactSubmit">
+          <span>Send Message</span>
+          <i class="fa-regular fa-paper-plane"></i>
+        </button>
+
+        <p class="contact-status" id="contactStatus"
+           role="status" aria-live="polite"></p>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
     <!--contact section end-->
 
     <!--footer section design-->
@@ -257,5 +898,84 @@
 
     <!--main js file-->
     <script src="script.js"></script>
+
+    <!-- Project Details Modal(project ke andar view detilas pr click krne pr ye khulega.) -->
+    <!-- Project Details Modal -->
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+      <div
+        class="project-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-project-title"
+        tabindex="-1"
+      >
+        <!-- Close Button -->
+        <button
+          class="project-modal-close"
+          id="project-modal-close"
+          type="button"
+          aria-label="Close project details"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Project Heading -->
+        <div class="project-modal-header">
+          <span class="project-modal-label">PROJECT DETAILS</span>
+          <h2 id="modal-project-title">Project Title</h2>
+          <p id="modal-project-description"></p>
+        </div>
+
+        <!-- Main Screenshot -->
+        <div class="project-modal-main-image">
+          <img id="modal-project-image" src="" alt="Project screenshot" />
+        </div>
+
+        <!-- 8 Screenshot Thumbnails -->
+        <div
+          class="project-modal-gallery"
+          id="modal-project-gallery"
+          aria-label="Project screenshots"
+        ></div>
+
+        <!-- Key Features -->
+        <div class="project-modal-section">
+          <h3>Key Features</h3>
+
+          <ul class="project-modal-features" id="modal-project-features"></ul>
+        </div>
+
+        <!-- Technologies -->
+        <div class="project-modal-section">
+          <h3>Technologies Used</h3>
+          <div class="project-modal-tech" id="modal-project-tech"></div>
+        </div>
+
+        <!-- Project Links -->
+        <div class="project-modal-actions">
+          <a
+            id="modal-github-link"
+            class="project-modal-btn github-btn"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github"></i>
+            GitHub
+          </a>
+
+          <a
+            id="modal-demo-link"
+            class="project-modal-btn demo-btn"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-solid fa-rocket"></i>
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
