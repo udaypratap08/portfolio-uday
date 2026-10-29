@@ -1864,6 +1864,18 @@ body.modal-open {
   }
 }
 @media (max-width: 617px) {
+   .home-content h3 {
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+
+  .home-content h1 {
+    font-size: 4rem;
+  }
+
+  .home-content {
+    min-width: 0;
+  }
   .project-container {
     /* grid-template-columns: 1fr; */
     grid-template-columns: 1fr;
@@ -2105,3 +2117,48 @@ padding: 0 1.5rem;
     display: none;
   }
 }
+ 
+
+/* Fix mobile horizontal overflow */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: clip;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  section {
+    max-width: 100%;
+  }
+
+  .home,
+  .about,
+  .skills,
+  .services,
+  .projects,
+  .contact {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
