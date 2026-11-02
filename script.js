@@ -52,7 +52,7 @@ window.onscroll= ()=>{
      /*----------------name typed (typed js)--------*/
 
      const typed= new Typed('.multiple-text',{
-        strings:['Fullstack Developer', 'Web Developer','MERN STACK Developer','App Developer'],
+        strings:['Full-stack Developer', 'Web Developer','MERN-STACK Developer','App Developer'],
         typeSpeed:70,
         backSpeed:70,
         backDelay:2000,

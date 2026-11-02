@@ -490,6 +490,7 @@ span {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+     align-items: stretch;
   gap: 2rem;
 }
 .services-container .services-box {
@@ -498,6 +499,12 @@ span {
   background: var(--bg-color);
   padding: 3rem 2rem 4rem;
   border: 2rem;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 490px;
+    height: 100%;
+    box-sizing: border-box;
   border-radius: 3rem;
   text-align: center;
   border: 0.2rem solid var(--snd-bf-color);
@@ -518,7 +525,12 @@ span {
 .services-box p {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
-} /*project section design*/
+} 
+.services-box .btn {
+    margin-top: 20px;
+    align-self: center;
+}
+/*project section design*/
 
 
 /* ===== Featured Projects Section ===== */
@@ -1746,6 +1758,12 @@ body.modal-open {
     font-size: 1.4rem;
     overflow-wrap: anywhere;
   }
+   .services-container {
+        align-items: stretch;
+    }
+     .services-container .services-box {
+        min-height: auto;
+    }
   .services h2 {
     margin-bottom: 3rem;
   }
